@@ -1,22 +1,27 @@
 #include <stdio.h>
 int main()
 {
-    int studmark=58;
+    int studmark;
+    printf("Enter your mark :   ");
+    scanf("%d",&studmark);
 
-    if(studmark => 35){
-      if(studmark => 85)
+    if(studmark >= 35){
+      if(studmark >= 85)
       printf("Outstanding Performance\n");
-       else
-       printf("Just pass\n");
+       else if(studmark >= 35)
+       printf("good\n");
+         else
+         printf("just pass");
+
     }
     
     else
     {
-        print("You are fail");
-        if(studmark <= 18)
+        printf("You are fail\n");
+        if(studmark >= 18)
         printf("You are bad");
         else
-        printf("You should better die");
+        printf("You should better die\n");
 
         return 0;
     }
