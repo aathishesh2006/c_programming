@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    int rows = 5;
+    int rows;
+    printf("to enter the number of stars :");
+    scanf("%d", &rows);
     for (int i = 1; i <= rows; i++)
      {
         for (int j = 0; j < rows - i; j++) 
