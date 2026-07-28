@@ -2,27 +2,27 @@
 int main()
 { 
   
-int num, original_num, reverse_Num = 0, remainder;
+int num, normal_num, reverse_Num = 0, answer;
 
-printf("Enter an integer: ");
+printf("Enter an integer : ");
 scanf("%d", &num);
 
-original_num = num;
+normal_num = num;
 
  while (num != 0)
 {
-    remainder = num % 10;                
-    reverse_Num = reverse_Num * 10 + remainder; 
+    answer = num % 10;        
+    reverse_Num = answer; 
     num = num / 10;                       
 }
 
-if (original_num == reverse_Num)
+if (normal_num == reverse_Num)
 {
-    printf("%d is a pallindrome.\n", original_num);
+    printf("%d is a pallindrome.\n", normal_num);
 }
 else
 {
-    printf("%d is not a palindrome.\n", original_num);
+    printf("%d is a pallindrome.\n", normal_num);
 }                                       
 
     return 0;
