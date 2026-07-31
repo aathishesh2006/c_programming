@@ -12,7 +12,7 @@ normal_num = num;
 while (num != 0)
 {
     answer = num % 10;        
-    reverse_Num = reverse_Num*10 + answer; 
+    reverse_Num = reverse_Num * 10 + answer; 
     num = num / 10;                      
 }
 
