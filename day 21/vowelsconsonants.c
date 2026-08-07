@@ -28,7 +28,9 @@ else if (ch >= 'A' && ch <= 'Z')
 }
 
 printf("Vowels: %d\n", vowels);
+printf("The vowels are : %c\n", str[100]);
 printf("Consonants: %d\n", consonants);
+printf("The consonants are : %c\n", str[100]);
 
     return 0;
 }
