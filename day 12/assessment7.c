@@ -1,20 +1,33 @@
 #include <stdio.h>
-int main() {
+void display_the_star(int n)
+{
+for (int i = 0; i < n; i++)
+{
+   for (int j = 0; j < i; j++)
+   {
+      printf("  ");
+   }
+   for (int k = 0; k < n - i; k++)
+   {
+      printf(" *");
+   }
+   printf(" \n");
+}
+}
 
-    int caterns = 5;
+int input() 
+{
+   int n;
+   printf("Enter the size :");
+   scanf("%d",&n);
 
-    for (int i = 0; i < caterns; i++)
-     {
-        for (int j = 0; j < i; j++)
-         {
-            printf("  ");
-         }
-        for (int k = 0; k < caterns - i; k++)
-         {
-            printf(" *");
-         }
-        printf(" \n");
-     }
+   return n;
+}
 
-    return 0;
+int main()
+{
+   int size = input();
+   display_the_star(size);
+
+   return 0;
 }

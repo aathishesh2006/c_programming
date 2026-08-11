@@ -1,7 +1,6 @@
 #include <stdio.h>
 int main()
 { 
-  
 int num, normal_num, reverse_Num = 0, answer;
 
 printf("Enter an integer : ");
