@@ -27,16 +27,16 @@ void game(int random)
 
         if(guess == random)
         {
-            printf("Congrats! You identified the number correctly\n");
-            break;
+        printf("Congrats! You identified the number correctly\n");
+        break;
         }
         else if(guess < random)
         {
-            printf("Sorry, your identified number is low\n");
+        printf("Sorry, your identified number is low\n");
         }
         else
         {
-            printf("Sorry, your identified number is high\n");
+        printf("Sorry, your identified number is high\n");
         }
     }
 }

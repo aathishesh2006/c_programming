@@ -6,7 +6,7 @@ void display_the_star(int n)
   {
     for(int j = 1; j <= i; j++)  
     {
-        printf(" * ");
+    printf(" * ");
     }
     printf("\n");
   }
