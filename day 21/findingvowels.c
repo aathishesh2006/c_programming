@@ -6,7 +6,7 @@ void input(char str[])
     scanf(" %[^\n]", str);
 }
 
-void count(char str[], char vowelList[], char consonantList[], int *vowels, int *consonants)
+void counting(char str[], char vowelList[], char consonantList[], int *vowels, int *consonants)
 {
     int vIndex = 0;
     int cIndex = 0;
@@ -54,7 +54,7 @@ int consonants = 0;
 
     input(str);
 
-    count(str, vowelList, consonantList, &vowels, &consonants);
+    counting(str, vowelList, consonantList, &vowels, &consonants);
 
     display(vowelList, consonantList, vowels, consonants);
 
