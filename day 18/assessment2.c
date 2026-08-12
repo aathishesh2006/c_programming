@@ -1,32 +1,45 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
+void input(char word[])
 {
+printf("Enter a word: ");
+scanf("%99s", word);
+}
 
-    char word[100];
+int palindrome(char word[])
+{
+int length;
+int isPalindrome = 1;
 
-    int length;
-    int isPalindrome = 1;
-
-    printf("Enter a word: ");
-    scanf("%99s", word);
-
-    length = strlen(word);
+length = strlen(word);
 
 for (int i = 0; i < length / 2; i++)
 {
-    if (word[i] != word[length - 1 - i])
-    {
-        isPalindrome = 0;
-        break;
-    }
+if (word[i] != word[length - 1 - i])
+{
+    isPalindrome = 0;
+    break;
+}
 }
 
-if (isPalindrome)
+return isPalindrome;
+}
+
+int main()
+{
+char word[100];
+
+input(word);
+
+if (palindrome(word))
+{
     printf("%s is a palindrome.\n", word);
+}
 else
+{
     printf("%s is not a palindrome.\n", word);
+}
 
 return 0;
 }
