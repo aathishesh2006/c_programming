@@ -23,7 +23,7 @@ void game(int random)
 
     while(1)
     {
-        guess = input();
+    guess = input();
 
         if(guess == random)
         {

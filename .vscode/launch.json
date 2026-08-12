@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/aathishesh/aathi/coding/c-programming/day 17",
-      "program": "/home/aathishesh/aathi/coding/c-programming/day 17/build/Debug/outDebug",
+      "cwd": "/home/aathishesh/aathi/coding/c-programming/day 15",
+      "program": "/home/aathishesh/aathi/coding/c-programming/day 15/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
