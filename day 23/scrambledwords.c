@@ -26,16 +26,16 @@ scrambling[a] = scrambling[y];
 scrambling[y] = contain;
 }
 
-printf("\nScrambled word: %s\n", scrambling);
+printf(" \nScrambled word: %s \n", scrambling);
 
 while(1)
 {
-    printf("\nGuess the original word: ");
+    printf(" \nGuess the original word: ");
     scanf("%s", guessing);
 
     if(strcmp(guessing, word) == 0)
     {
-    printf("\nCorrect! You found the word!\n");
+    printf(" \nCorrect! You found the word! \n");
     break;
     }
     else
