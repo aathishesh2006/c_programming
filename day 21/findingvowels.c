@@ -53,9 +53,7 @@ int vowels = 0;
 int consonants = 0;
 
     input(str);
-
     counting(str, vowelList, consonantList, &vowels, &consonants);
-
     display(vowelList, consonantList, vowels, consonants);
 
     return 0;

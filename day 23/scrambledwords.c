@@ -5,7 +5,7 @@
 
 int main()
 {
-char word[100], scrambled[100], guess[100], contain;
+char word[100], scrambling[100], guessing[100], contain;
 int a, y, length;
 
 srand(time(0));
@@ -13,27 +13,27 @@ srand(time(0));
 printf("Enter a word: ");
 scanf("%s", word);
 
-strcpy(scrambled, word);
+strcpy(scrambling, word);
 
-length = strlen(scrambled);
+length = strlen(scrambling);
 
 for(a = 0; a < length; a++)
 {
 y = rand() % length;
 
-contain = scrambled[a];
-scrambled[a] = scrambled[y];
-scrambled[y] = contain;
+contain = scrambling[a];
+scrambling[a] = scrambling[y];
+scrambling[y] = contain;
 }
 
-printf("\nScrambled word: %s\n", scrambled);
+printf("\nScrambled word: %s\n", scrambling);
 
 while(1)
 {
     printf("\nGuess the original word: ");
-    scanf("%s", guess);
+    scanf("%s", guessing);
 
-    if(strcmp(guess, word) == 0)
+    if(strcmp(guessing, word) == 0)
     {
     printf("\nCorrect! You found the word!\n");
     break;
