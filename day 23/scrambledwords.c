@@ -1,39 +1,48 @@
 #include <stdio.h>
 #include <string.h>
-
-void scrambling(char word[], char scrambled[])
-{
-int i, length;
-
-length = strlen(word);
-
-for(i = 0; i < length - 1; i++)
-{
-    scrambled[i] = word[i + 1];
-}
-
-scrambled[length - 1] = word[0];
-scrambled[length] = '\0';
-}
+#include <stdlib.h>
+#include <time.h>
 
 int main()
 {
-char word[100], scrambled[100], guess[100];
+char word[100], scrambled[100], guess[100], temp;
+int i, j, length;
+
+srand(time(0));
 
 printf("Enter a word: ");
 scanf("%s", word);
 
-scrambling(word, scrambled);
+strcpy(scrambled, word);
+
+length = strlen(scrambled);
+
+for(i = 0; i < length; i++)
+{
+j = rand() % length;
+
+temp = scrambled[i];
+scrambled[i] = scrambled[j];
+scrambled[j] = temp;
+}
 
 printf("\nScrambled word: %s\n", scrambled);
 
-printf("Guess the original word: ");
-scanf("%s", guess);
+while(1)
+{
+    printf("\nGuess the original word: ");
+    scanf("%s", guess);
 
-if(strcmp(word, guess) == 0)
-    printf("Correct! You Win.\n");
-else
-    printf("Wrong! The correct word is %s\n", word);
+    if(strcmp(guess, word) == 0)
+    {
+        printf("\nCorrect! You found the word!\n");
+        break;
+    }
+    else
+    {
+        printf("Wrong! Try again.");
+    }
+}
 
-    return 0;
+return 0;
 }
