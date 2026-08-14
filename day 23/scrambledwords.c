@@ -48,7 +48,7 @@ if(strcmp(guessing, word) == 0)
 }
 }
 
-int main()
+int main()  
 {
     char word[100], scrambling[100];
     srand(time(0));
