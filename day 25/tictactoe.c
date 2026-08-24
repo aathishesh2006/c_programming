@@ -23,4 +23,14 @@ void slot(int size, int arr[size][size])
         }
     } 
 }
-void slot_
+void slot(int size, int arr[size][size])
+{
+    int element = 1;
+    for (int i = 0; i < size; i++)
+    {
+        for(int j = 0; j < size; j++)
+        {
+            arr[i][j] = element++;
+        }
+    } 
+}
