@@ -34,3 +34,14 @@ void slot(int size, int arr[size][size])
         }
     } 
 }
+void select(int size, int arr[size][size])
+{
+    int element = 2;
+    for (int i = 0; i < size; i++)
+    {
+        for(int j = 0; j < size; j++)
+        {
+            arr[i][j] = element++;
+        }
+    }
+}
