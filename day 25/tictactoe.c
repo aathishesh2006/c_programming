@@ -108,5 +108,25 @@ int gamerule(int size, int arr[size][size], int element)
 win = 1;
 for (rows = 0; rows < size; rows++)
 {
-
+    if(arr[rows][rows] != element)
+    {
+        win = 0;
+        break;
+    }
 }
+if(win == 1)
+return 1;
+
+win = 1;
+for(rows = 0; rows < size; rows++)
+{
+    if(arr[columns][columns] != element)
+    {
+        win = 0;
+        break;
+    }
+}
+if (win == 1)
+return 1;
+}
+
