@@ -53,8 +53,7 @@ void gamestart(int size, int arr[size][size], int element)
     int x, y, a, b;
     while (1)
     {
-    printf("\nEnter here %s: ",
-    (element == -1) ? "O" : "X");
+    printf("\n Enter here %s: ",(element == -1) ? "O" : "X");
     scanf("%d", &x);
 
     if (x < 1 || x > size * size)
@@ -109,15 +108,15 @@ int gamerule(int size, int arr[size][size], int element)
     for (rows = 0; rows < size; rows++)
     {
     if (arr[rows][columns] != element)
-        {
-        win = 0;
-        break;
-        }
+    {
+    win = 0;
+    break;
+    }
     }
 
     if (win == 1)
     {
-        return 1;
+    return 1;
     }
     }
 
@@ -127,14 +126,14 @@ int gamerule(int size, int arr[size][size], int element)
     {
     if (arr[rows][rows] != element)
     {
-        win = 0;
-        break;
+    win = 0;
+    break;
     }
     }
 
     if (win == 1)
     {
-        return 1;
+    return 1;
     }
 
     win = 1;
@@ -143,14 +142,14 @@ int gamerule(int size, int arr[size][size], int element)
     {
     if (arr[rows][size - 1 - rows] != element)
     {
-        win = 0;
-        break;
+    win = 0;
+    break;
     }
     }
 
     if (win == 1)
     {
-        return 1;
+    return 1;
     }
 
     return 0;
