@@ -15,7 +15,7 @@ void getnames(char name_1[], char name_2[])
 
 if (strcmp(name_1, name_2) == 0)
 {
-    printf("Same names couldn't do the process.\n");
+    printf("INVALID.\n");
 }
 else
 {
