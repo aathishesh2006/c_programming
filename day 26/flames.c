@@ -76,21 +76,21 @@ for (i = 0; i < len2; i++)
 
     result[k] = '\0';
 
-    int tlength = strlen(result);
-    printf("Remaining count = %d\n", tlength);
+    int total_length = strlen(result);
+    printf("Remaining count = %d\n", total_length);
 
-    return tlength;
+    return total_length;
 }
 
-void flames(int tlength)
+void flames(int total_length)
 {
-    if (tlength == 0)
+    if (total_length == 0)
     {
         printf("No remaining characters.\n");
         return;
     }
 
-    int result = tlength % 6;
+    int result = total_length % 6;
 
     if (result == 0)
     {
@@ -134,10 +134,10 @@ int main()
 
     getnames(name_1, name_2);
 
-    int tlength;
+    int total_length;
 
-    tlength = name_len(name_1, name_2);
-    flames(tlength);
+    total_length = name_len(name_1, name_2);
+    flames(total_length);
 
     return 0;
 }
