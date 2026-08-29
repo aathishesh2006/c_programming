@@ -140,7 +140,6 @@ int main()
     int total_length;
 
     total_length = name_len(name_1, name_2);
-
     flames(total_length);
 
     return 0;
