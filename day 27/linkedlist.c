@@ -14,7 +14,7 @@ struct node *createnode(int value)
 
     if(newnode == NULL)
     {
-        printf("Memory allocation failed\n");
+        printf("Memory allocation failed \n");
         exit(1);
     }
 
