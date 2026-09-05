@@ -1,40 +1,40 @@
 #include <stdio.h>
 int main()
 {
-    int day = 8;
+    int day = 3;
 
     switch (day){
 
         case 1:
-        printf("sunday");
+        printf("sunday\n");
         break;
 
         case 2:
-        printf("monday");
+        printf("monday\n");
         break;
 
         case 3:
-        printf("tuesday");
+        printf("tuesday\n");
         break;
 
         case 4:
-        printf("wednesday");
+        printf("wednesday\n");
         break;
 
         case 5:
-        printf("thursday");
+        printf("thursday\n");
         break;
 
         case 6:
-        printf("friday");
+        printf("friday\n");
         break;
 
         case 7:
-        printf("saturday");
+        printf("saturday\n");
         break;
 
         default:
-        printf("no day is available");
+        printf("no day is available\n");
 
     }
 

@@ -8,19 +8,18 @@ int main()
     if(studmark >= 35){
       if(studmark >= 85)
       printf("Outstanding Performance\n");
-       else if(studmark >= 35)
+       else if(studmark > 35)
        printf("good\n");
-         else
+         else if(studmark == 35)
          printf("just pass");
 
     }
     
     else
     {
-        printf("You are fail\n");
         if(studmark >= 18)
-        printf("You are bad");
-        else
+        printf("You are fail\n");
+        else if(studmark < 10)
         printf("You should better die\n");
 
         return 0;
