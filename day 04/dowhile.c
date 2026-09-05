@@ -1,10 +1,12 @@
 #include <stdio.h>
 int main()
 {
- while(1){
+ while(1)
+{
     printf("this is forever\n");
 }
-do{
+do
+{
     printf("this concept is forever");
 }
 while(1);

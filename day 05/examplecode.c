@@ -9,7 +9,7 @@ int main()
     }
     printf("\n");
     printf("These are the elements in order\n ");
-    for(int i=4; i>0; i--)
+    for(int i=4; i>-1; i--)
     {
     printf("%d ", arr[i]);
     }

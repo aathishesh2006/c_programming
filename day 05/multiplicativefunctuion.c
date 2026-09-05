@@ -4,9 +4,6 @@ int multiplication (int u,int v)
     return u * v;
 }
 
-
-
-
 int main()
 {
     int greeks;

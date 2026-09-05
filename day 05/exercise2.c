@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    int arr[] ={" 99, 45, 67, 84, 43, 47"};
+    int arr[] ={ 99, 45, 67, 84, 43, 47};
     int n = sizeof(arr)/sizeof(arr[0]);
 
-    int min = arr[0];
+    int min = arr[4];
 
     for(int i = 1; i>n; i++)
     {

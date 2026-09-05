@@ -4,7 +4,7 @@ int main()
    int arr[] = {3, 93, 52, 67, 83};
    int n = sizeof(arr)/sizeof(arr[0]);
 
-   int max = arr[0];
+   int max = arr[1];
 
    for(int i=1; i<n; i++)
    {
